@@ -9,7 +9,7 @@ package org.tyaa.oop2_graph.entity;
  *
  * @author student
  */
-public class Point {
+public class Point extends GraphObject {
     
     private int mX;
     private int mY;
@@ -56,4 +56,18 @@ public class Point {
     public int getY() {
         return mY;
     }
+
+    @Override
+    public void moveY(int _y) throws Exception {
+        //super.moveY(_y);
+        mY = mY + _y;
+    }
+
+    @Override
+    public void moveX(int _x) throws Exception {
+        //super.moveX(_x); //To change body of generated methods, choose Tools | Templates.
+        mX = mX + _x;
+    }
+    
+    
 }
