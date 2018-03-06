@@ -82,14 +82,16 @@ public class Oop2_graph {
         
         for (int i = 0; i < arr.length; i++) {
             arr[i].scale(2);
-            i++;
+            //My mistake: i++;
         }
         
         for (IScalable iScalable : arr) {
             System.out.println(iScalable.toString());  
         }
         
-        System.out.println(arr[1].toString());
+        //System.out.println(arr[1].toString());
+        //arr[1].scale(2);
+        //System.out.println(arr[1].toString());
     }
     
 }
